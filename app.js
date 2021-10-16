@@ -10,7 +10,7 @@ app.get('/call/:name', (req, res) => {
 })
 
 app.get('/cool', (req, res) => {
-  res.send('Heyo!!')
+  res.send('Coolllll')
 })
 
 module.exports = app
