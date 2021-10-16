@@ -10,7 +10,7 @@ app.get('/call/:name', (req, res) => {
 })
 
 app.get('/test', (req, res) => {
-  res.send('This is test endpoint')
+  res.send('this is test endpoint')
 })
 
 module.exports = app
