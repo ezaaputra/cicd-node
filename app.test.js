@@ -34,5 +34,11 @@ describe('GET /cool', () => {
     const res = await request.get('/cool')
     expect(res.text).toBe('Coolllll')
   })
-  
+})
+
+describe('GET /hacktoberfest', () => {
+  test('should return success message', async () => {
+    const res = await request.get('/hacktoberfest')
+    expect(res.body.message).toBe('hacktoberfest!!!')
+  })
 })
