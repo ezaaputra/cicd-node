@@ -6,7 +6,11 @@ app.get('/', (req, res) => {
 })
 
 app.get('/call/:name', (req, res) => {
-  res.json({message: `hello ${req.params.name}!`})
+  res.json({ message: `hello ${req.params.name}!` })
+})
+
+app.get('/test', (req, res) => {
+  res.send('This is test endpoint')
 })
 
 module.exports = app

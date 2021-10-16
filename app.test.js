@@ -28,3 +28,11 @@ describe('GET /call/:name', () => {
     })
   })
 })
+
+describe('GET /test', () => {
+  test('should return success message', async () => {
+    const res = await request.get('/test')
+    expect(res.text).toBe('this is test endpoint')
+  })
+  
+})
