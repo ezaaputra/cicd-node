@@ -13,4 +13,8 @@ app.get('/cool', (req, res) => {
   res.send('Coolllll')
 })
 
+app.get('/hacktoberfest', (req, res) => {
+  res.json({message: 'hacktoberfest!!!'})
+})
+
 module.exports = app
